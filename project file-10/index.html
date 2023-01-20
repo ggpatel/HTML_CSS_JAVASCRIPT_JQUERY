@@ -1,0 +1,433 @@
+<!Doctype html>
+<html>
+
+<head>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+    <style src="style.css"></style>
+</head>
+
+<body>
+    <button id="zeroHide">hide this button</button>
+    <button id="zeroShow">show this button</button>
+    <button id="zeroHover">hover this button</button>
+    <button id="dblclick1">double click</button>
+    <button id="mouseenter1">enter mouse</button>
+    <button id="mouseleave1">mouse leave</button>
+    <button id="mouseup1">mouse up</button>
+    <button id="mousedown1">mouse down</button>
+    <button id="blur1">blur</button>
+    <button id="hideB"> Hide </button>
+    <button id="toggleB"> toggle hide and show</button>
+    <button id="stopB">stop sliding</button>
+    <button id="callbackB">callback hide</button>
+    <button id="callbackB1">first error n callback</button>
+    <button id="chainB1">chain click</button>
+
+    <!-- line 27 to line 50 are the example of jquery HTML for set and get value-->
+    <button id="getbtn1">show Text</button>
+    <button id="getbtn2">show Html</button>
+    <p id="getP">This is some <b>bold</b> text in paragraph.</p>
+
+    <button id="getbtnvalue">show value</button>
+    <p>Name:<input type="text" id="getvalueP" value="mickey mouse"></p>
+
+    <button id="getbtnattr">show attribute</button>
+    <p><a href="https://www.w3schools.com" title="Love it!!" id="w3s">w3 school</a></p>
+
+
+    <button id="setbtn1">set for text</button>
+    <button id="setbtn2">set for HTML</button>
+    <button id="setbtn3">set for Value</button>
+    <p id="settext">this is text para</p>
+    <p id="setHTML">this is HTML para</p>
+    <p>Input field:<input type="text" id="setvalue" value="scoby doby do"> </p>
+
+    <button id="changebtn">change href value</button>
+    <p><a href="https://www.katespade.com" title="Love it!" id="katespade">women purse</p>
+
+    <button id="callbackbtn">call back example</button>
+    <p><a href="https://www.katespade.com" id="katespadegirl"> purse brand</a> </p>
+
+
+    <button id="fadeinB">Fade in </button>
+    <div id="fadeindiv1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+    <br />
+    <div id="fadeindiv2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+    <br />
+    <div id="fadeindiv3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+    <br />
+    <button id="fadeoutB">Fade out </button>
+    <div id="fadeoutdiv1" style="width:80px;height:80px;background-color:red;"></div>
+    <br />
+    <div id="fadeoutdiv2" style="width:80px;height:80px;background-color:green;"></div>
+    <br />
+    <div id="fadeoutdiv3" style="width:80px;height:80px;background-color:blue;"></div>
+
+    <button id="fadetoggleB">Fade toggle</button>
+    <div id="fadetogglediv1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+    <br />
+    <div id="fadetogglediv2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+    <br />
+    <div id="fadetogglediv3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+    <br />
+
+    <button id="animateB"> Start Animate</button>
+    <div id="animatediv" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+    <button id="animatechainB">animation in chain</button>
+    <div id="animatechaindiv" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id="btnapnd1">append text</button>
+    <button id="btnapnd2">append list</button>
+    <br />
+    <p class="apndP">This is paragraph</p>
+    <p class="apndP">this is another paragraph</p>
+    <br />
+    <ol id="apndol">
+
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3 </li>
+    </ol>
+    <br />
+    <button id="btnprepend1">prepend text</button>
+    <button id="btnprepend2">prepend list</button>
+
+    <p class="prependP">this is paragraph</p>
+    <p class="prependP">this is anotherparagraph</p>
+    <br />
+    <ol id="prependol">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+
+
+    <p id="hideP">hide this line in 2 secound</p>
+    <p id="toggleP">toggle hide and show line</p>
+    <p id="callbackP"> first hide n then alert show</p>
+    <p id="callbackP1">first error show n then hide para</p>
+    <p id="chainP1"> j Query is fun but tircky!!</p>
+
+
+
+    <style>
+        #flip1,
+        #panel1 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+
+        }
+
+        #panel1 {
+            padding: 50px;
+        }
+
+        .rmvcls {
+            color: red;
+            font-size: 20px;
+        }
+
+        .rmvdemo {
+            color: green;
+            font-size: 25px;
+        }
+
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        #divheightwidth,
+        #divouterheightwidth,
+        #divmargin,
+        #divresize {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+
+        .divparent,
+        .divparents,
+        .divchild,
+        .divfindchild,
+        .divfirstfilter,
+        .divsiblings,
+        .divsiblingsnext {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgray;
+            margin: 15px;
+            padding: 5px;
+        }
+
+        table {
+            font-family: arial, sans-sarif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+    <div id="flip1">sildeToggle </div>
+    <div id="panel1">Hello world</div>
+
+    </div>
+    <!-- < Jquery HTML> -->
+
+    <button onclick="appendText()"> append text display</button>
+
+    <img id="imgkatespade" src="Kate-SpadePNG.png" alt="kate spade" height="104" weight="104">
+    <button id="btnimgbefore">before insert</button>
+    <button id="btnimgafter">after insert</button>
+
+    <button onclick="afterText()">img after text</button>
+    <img id="afterimgkatespade" src="Kate-SpadePNG.png " alt="kate spade" height="104" weight="104">
+
+    <button id="rmvbtn">remove div element</button>
+    <div id="rmvdiv" style="height:100px; width:300px;border:1px solid black;background-color:yellow">
+        this is some para.
+        <p>this is something random</p>
+        <p>this one is another paragraph</p>
+
+    </div>
+
+    <button id="emptybtn">empty div</button>
+    <div id="emptydiv" style="height:100px;width:300px;border:1pxsoild black;background-color: yellow;">
+        this is some para.
+        <p>this is something random</p>
+        <p>this one is another paragraph</p>
+    </div>
+
+    <button id="rmvclsdemobtn">remove class and demo</button>
+    <p>this is simple</p>
+    <p class="rmvcls">this is hard</p>
+    <p class="rmvcls">this is easy</p>
+    <p class="rmvdemo">this is not simple n hard</p>
+
+
+    <button id="btnadd">button add class </button>
+    <h1 class="headadd1">heading 1</h1>
+    <h2 class="headadd1">heading 2</h2>
+    <p class="paraadd">this is paragraph add</p>
+    <p class="paraadd">this is another paragraph</p>
+    <div class="divadd">this is important text</div>
+
+    <button id="btnredrmv"> remove red clr class</button>
+    <h1 class="headredrmv">heading 1</h1>
+    <h2 class="headredrmv">heading 2 </h2>
+    <p class="pararedrmv">this is para </p>
+    <p>this is without class para</p>
+
+    <button id="btntoggleyellow">toggle yellow button</button>
+    <h1 class="headtoggleyellow">yellow heading1</h1>
+    <h2 class="headtoggleyellow">another yellow heading2</h2>
+    <p class="paratoggleyellow">yellow para</p>
+    <p>without yellow class para</p>
+
+    <button id="btngetcssmethod">button for css GET method</button>
+    <p class="paragetcssmethod" style="background-color:#ff0000">this is red color</p>
+    <p class="paragetcssmethod" style="background-color:#00ff00">this is green color</p>
+    <p class="paragetcssmethod" style="background-color:#0000ff">this is blue color</p>
+
+    <button id="btnsetcssmethod">button for css SET method</button>
+    <p class="parasetcssmethod" style="background-color:#ff0000">this is red color</p>
+    <p class="parasetcssmethod" style="background-color:#00ff00">this is green color</p>
+    <p class="parasetcssmethod" style="background-color:#0000ff">this is blue color</p>
+
+    <button id="btnheightwidth">button height and width</button>
+    <div id="divheightwidth"></div>
+    <button id="btnouterheightwidth">outer height and width</button>
+    <div id="divouterheightwidth"></div>
+
+    <button id="btnmargin">button margin</button>
+    <div id="divmargin"></div>
+
+    <button id="btndimension">dimension of document</button>
+
+    <button id="btnresize">resize the button </button>
+    <div id="divresize"> </div>
+
+    <!-- <jquery traversing> -->
+    <div class="divparent">
+        <div style="width:500px;"> div great-grandparent
+            <ul>ul grandparent
+                <li>li directparent
+                    <span class="spanparent">span</span>
+                </li>
+            </ul>
+        </div>
+        <div style="width:500px;">div grandparent
+            <p>p direct parent
+                <span class="spanparent">span</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="bodyparents">
+        <div style="width:500px">div great-grandparent
+            <ul>ul grandparent
+                <li>li directparent
+                    <span class="spanparents">span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="divchild">
+        <p class="firstchildP">p first child
+            <span>span grandchild</span>
+        </p>
+        <p class="secoundchildP">p secound child
+            <span>span grandchild</span>
+        </p>
+    </div>
+
+    <div class="divfindchild">
+        <p>p child
+            <span> span grandchild</span>
+        </p>
+        <p>p child
+            <span>span grandchild</span>
+        </p>
+    </div>
+
+    <div class="divfirstfilter" style="border:1px solid black">
+        <p>A para in a div</p>
+        <p>A another para in a div</p>
+    </div>
+    <div class="divfirstfilter" style="border:1px solid black">
+        <p>A para in a div</p>
+        <p>A another para in a div</p>
+    </div>
+    <div class="divfirstfilter" style="border:1px solid black">
+        <p>A para in a div</p>
+        <p>A another para in a div</p>
+    </div>
+
+
+    <p class="Peqfilter">My name is Donald (index 0).</p>
+    <p class="Peqfilter">Donald Duck (index 1).</p>
+    <p class="Peqfilter">I live in Duckburg (index 2).</p>
+    <p class="Peqfilter">My best friend is Mickey (index 3).</p>
+
+    <p>My name is Donald.</p>
+    <p class="Pfilter">I live in Duckburg.</p>
+    <p class="Pfilter">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+
+    <div id="divsiblings">
+        <p>P parent
+            <span>span</span>
+        <h2 id="siblingsh2">h2</h2>
+        <h3>h3</h3>
+        <h3 id="siblingsh3">h3</h3>
+        <span id="spansiblings">span</span>
+        </p>
+    </div>
+    <div id="divsiblingsnext">
+        <p> p parent
+            <span> span</span>
+        <h2 id="siblingsnexth2">h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5 id="siblingsh5">h5</h5>
+        <h6>h6</h6>
+        </p>
+    </div>
+
+    <div id="divsiblingsprev">
+        <p>parent
+            <span> span</span>
+        <h2 id="siblingsprevh2">h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5 id="siblingsprevh5">h5</h5>
+        <h6>h6</h6>
+
+        </p>
+    </div>
+    <!-- Ajax start here -->
+    <button id="fileloadbutton">file</button>
+    <div id="fileloaddiv">let jquery Ajax chage this para</div>
+
+    <button id="fileloadbuttonnote">notpad file</button>
+    <div id="noteloaddiv">notepad file change the para </div>
+
+    <button id="Azaxbutton">button Azax</button>
+    <div id="Azaxdiv">Azax div is here</div>
+
+    <h3>filter table</h3>
+    <input type="text" id="myInput" placeholder="search..">
+    <br /><br />
+    <table>
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@mail</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@greatstuff.com</td>
+            </tr>
+            <tr>
+                <td>Anja</td>
+                <td>Ravendale</td>
+                <td>a_r@test.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>

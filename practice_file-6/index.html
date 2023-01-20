@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            label {
+                
+            }
+
+            .queen {
+                color:red;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                text-shadow: 2px 2px burlywood;
+                font-weight: bold;
+                padding: 14px 25px;
+             }
+             .queen:visited {
+                color:green
+             }
+             .queen:hover {
+                color:hotpink;
+                background-color: yellowgreen;
+             }
+             .queen:active {
+                color:blue
+             }
+                ol {
+                background-color:#ff9999;
+                 padding: 20px;
+                }
+                ul {
+                    background-color: #3399ff;
+                    padding: 20px;
+                }
+                ol li {
+                    background-color: #ffe5e5;
+                    color:darkred;
+                    padding: 5px;
+                    margin-left: 35px;
+                    }
+                    ul li {
+                        background-color: #cce5ff;
+                        color: darkblue;
+                        margin: 5px;
+                    }
+                    div.sticky {
+                        position:sticky;
+                        background-color: light green;
+                        padding: 5px;
+                        top:0;
+                        border:2px solid green;
+                    }
+        </style>
+        <title>project-6</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="web page tutorial">
+        <meta name="keywords" content="html,css,javascript">
+        <meta name="author" content="jon Doe">
+        <meta name="veiwport" content="width=device-width, initial scale-0.1">
+    </head>
+    <body>
+        <h1>practice project-6</h1>
+        
+        <label class="smile">hiiii..!</label>
+        <a title="Expensive..!!" href="https://www.macys.com">
+            <img src="Macys_logo_PNG3.png" alt="macy's symbol" height="104" weight="104">
+        </a>
+    <form action="/action_page.php" target="_blank">
+        <fieldset>
+    <legend>Information</legend>
+    <label for="fname">first name</label>
+    <input type="text" name="lname" id="lname" value="Grishma"><br />
+    <label for="lname">Last name</label>
+    <input type="text" name="lname" id="lname" value="patel"><br />
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</fieldset>
+</form>
+<h2 id="king"> button</h2>
+<button class="queen" type="button" onclick="alert('hello world')">click me!</button>
+<h2 class="music">Radio button</h2>
+<form action="/action_page.php">
+<input type="radio" name="flower name" id="lily" value="lily">
+<label for="lily">liliy</label><br />
+<input type="radio" name="flower name" id="jasmin" value="jasmin">
+<label for="jasmin">jasmin</label><br />
+<input type="radio" name="flower name" id="lotous" value="lotous">
+<label type="lotous">lotous</label><br />
+<input type="submit" value="submit">
+</form>
+<h3>checkbox</h3>
+<form action="/action_page.php">
+    <input type="checkbox" name="home furniture" id="sofa" vlaue="sofa">
+    <label for="safa">sofa</label><br />
+    <input type="checkbox" name="home furniture" id="dinning table" value="dining table">
+    <label for="dining table">dining table></label><br/>
+    <input type="checkbox" name="home furniture" id="bed" value="bed">
+    <label for="bed">bed</label><br />
+    <input type="submit" value="submit">
+</form> 
+<ul style="list-style-type:square;">
+    <li>home furniture
+        <ul>
+            <li>bed</li> 
+            <li>sofa</li>
+            <li>dinningtable</li>
+        </ul>
+    </li>
+    <li>home
+        <ul>
+            <li>living room</li>
+            <li>bedroom</li>
+            <li>kitchen</li>
+        </ul>
+    </li>
+</ul>
+<ol type="A">
+    <li>home</li>
+    <ol>
+        <li>garden</li>
+        <li>backyard</li>
+        <li>garage</li>
+    </ol>
+    <li>kitchen applinces</li>
+    <ol>
+        <li>freze</li>
+        <li>oven</li>
+        <li>microwave</li>
+    </ol>
+</ol>
+<form action="/action_page.php">
+    <select type="text" name="cars" id="cars" multiple>
+        <optgroup label="luxury cars">
+            <option value="bmw">bmw</option>
+            <option value="odi">odi</option>
+        </optgroup>
+        <optgroup label="regular cars">
+            <option value="honda">honda</option>
+            <option value="jeep">jeep</option>
+        </optgroup>
+        <input type="submit" value="submit">
+    </select>
+
+</form>
+
+<form action="/action_page.php">
+    <textarea name="massage" rows="10" cols="30">Hello.. how are you ? doing good. happy Hallowin.</textarea>
+</form>
+
+<div class="sticky">I am sticky</div>
+<style>
+    table,th,td{
+        border:1px solid black;
+        text-align: center;
+     }
+     h3 {
+        color: blue;
+     }
+     #king {
+        color: blueviolet;
+     }
+     .music {
+        color: brown;
+     }
+     tr:hover {
+        background-color: coral;
+     }
+</style>
+<h3>Table </h3>
+<table style="width:50%;">
+<tr>
+    <th colspan="3">2022</th>
+</tr>
+<tr>
+    <td>x</td>
+    <td>y</td>
+    <td>z</td>
+</tr>
+<tr>
+    <td colspan="2" rowspan="2">Fiesta</td>
+    <td>1</td>
+</tr>
+    <tr>
+        <td>2</td>
+    </tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+</tr>
+</table>
+<iframe src="http://127.0.0.1:5500/practice_file-6/index.html" height="200" width="300">example</iframe>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size:35px ;
+        color:white;
+    }
+    nav{
+        float: left;
+        width:30%;
+        height: 300px;
+        padding: 20px;
+         background :#ccc
+    }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height:300px;
+    background-color: #f1f1f1;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+footer {
+    background-color: #777;
+    padding: 10px;
+    color: white;
+    text-align: center;
+
+}
+@media (max-width:600px) {
+    nav article {
+        width:100%;
+        height:auto;
+    }
+}
+</style>
+<h4>css layout float</h4>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<header>
+    <h4>cities</h4>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li>london</li>
+            <li>paris</li>
+            <li>tokyo</li>
+        </ul>
+    </nav>
+    <article>
+        <h4>london</h4>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </article>
+</section>
+
+<footer>
+    <p>footer</p>
+</footer>
+<form action="/action_page.php">
+    <label for="fname">firstname</label>
+    <input type="text" id="fname" name="grishma" value="grishma"><br />
+    <label for="lname">last name</label>
+    <input type="text" id="lname" name="patel" value="patel"><br />
+    <input type="submit" onclick="alert('oops!')" value="submit"><br />
+
+    <label for="Customer Type">Customer Type:</label>
+    <select id="customer type">
+        <option value="INDIVIDUAL">INDIVIDUAL</option>
+        <option value="COMPANY">COMPANY</option>
+        <option value="GOVERNMENT AGENCY">GOVERNMENT AGENCY</option>
+        <option value="DEALER">DEALER</option>
+    </select>
+
+    <label for="date fo birth">Date Of Birth</label>
+    <input type="date">
+</form>
+
+
+
+
+
+    </body>
+</html>

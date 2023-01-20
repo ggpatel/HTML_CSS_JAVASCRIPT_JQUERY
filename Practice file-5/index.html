@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My project-5</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web Tutorials">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="author" content="john Doe">
+    <meta name="veiwport" content="width=device-width , intial sacle=1.0">
+</head>
+
+<body>
+
+    <h1>Practice file-5</h1>
+    <span>smile plsese ..</span>
+    <a title="love it!!" href="https://www.katespade.com" target="_blank">
+        <img src="Kate-SpadePNG.png" alt="kate sapde symbol" height="104" width="104">
+    </a>
+    <a href="mailto:garvitdpatel@gamil.com">Mail me.</a>
+    <form action="/action_page.php" target="_blank">
+        <fieldset>
+            <legend>Information:</legend>
+            <label for="fname">Firstname</label>
+            <input type="text" id="fname" name="fname" value="Grishma"><br />
+            <label for="lname">Lastname</label>
+            <input type="text" id="Lname" name="lname" value="Patel"><br />
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+    <h2>Button</h2>
+    <button type="button" onclick="alert('Hello World!!')">Click Me!!</button><br /><br />
+    <h2>Radio button</h2>
+    <form action="/action_page.php">
+        <input type="radio" id="okra" name="vegetables" value="okra">
+        <label for="okra">okra</label><br />
+        <input type="radio" id="green paper" name="vegetables" value="green paper">
+        <label for="green paper">green paper</label><br />
+        <input type="radio" id="olive" name="vegetables" value="olives">
+        <label for="olives">olives</label><br />
+        <input type="submit" value="submit"><br />
+    </form>
+
+    <h3 id="snack">checkbox</h3>
+    <form action="/action_page.php">
+        <input type="checkbox" id="parrot" name="birds" value="parrot">
+        <label for="parrot">parrot</label><br />
+        <input type="checkbox" id="rooster" name="birds" value="rooster">
+        <label for="rooster">rooster</label><br />
+        <input type="checkbox" id="peacock" name="birds" value="peacock">
+        <label for="peacock">peacock</label><br />
+        <input type="submit" value="submit">
+
+
+    </form>
+    <ul style="list-style-type: circle;">
+        <li>baby product</li>
+        <ul>
+            <li>lotion</li>
+            <li>shampoo</li>
+            <li>conditioner</li>
+        </ul>
+        <li>baby medicine</li>
+        <li>baby diaper</li>
+    </ul>
+
+    <ol type="1">
+        <li>T.V</li>
+        <ol>
+            <li>computer</li>
+            <li>laptop</li>
+        </ol>
+
+        <li>i-pad</li>
+    </ol>
+
+    <form action="/action_page.php">
+        <label for="vehicles">multiple vehicles</label>
+        <select type="text" id="vehicle" name="vehicle" multiple onchange="alert('dont dare')">
+            <optgroup label="heavy vehicle">
+                <option value="toe-truck">toe-truck</option>
+                <option value="dumpster truck">dumpster truck</option>
+            </optgroup>
+            <optgroup label="transportation vehicle">
+                <option value="bus">bus</option>
+                <option value="cars">cars</option>
+            </optgroup><br />
+        </select>
+        <input type="submit" value="submit">
+
+    </form>
+    <form action="/action_page.php">
+        <textarea name="massage" rows="10"
+            cols="30">hey .. how are you doing?? i am doing well. how's your health??</textarea>
+    </form>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        h2 {
+            color: yellow;
+        }
+
+        #snack {
+            background-color: aqua;
+
+        }
+
+        .ludo {
+            font-size: 15px;
+            color: brown;
+        }
+    </style>
+    <h4 class="ludo">table</h4>
+    <table style="width:50%">
+        <tr>
+            <th colspan="3">2022</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">FIESTA</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+        </tr>
+
+    </table><br />
+
+    <iframe src="http://127.0.0.1:5500/Practice%20file-5/index.html" height="200" width="300">example</iframe>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+
+        }
+
+        nav {
+            float: left;
+            background-color: #cccc;
+            width: 30%;
+            height: 300px;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0%;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+    </style>
+    <h4>css style layout</h4>
+    <p> this is just exmaple .</p>
+
+    <header>
+        <h4>Cities</h4>
+    </header>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li>London</li>
+                <li>Paris</li>
+                <li>Tokyo</li>
+            </ul>
+        </nav>
+        <article>
+            <h5>London</h5>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer><br />
+    <form action="/action_page.php">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="Grishma" onkeyup="alert('hoo')" value="Grishma">
+        <input type="submit" onclick="alert('error')" value="submit">
+    </form>
+</body>
+
+</html>
