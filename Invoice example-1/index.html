@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is an Invoice Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href="style.css">
+    <script src="script.js"></script>
+    <style type="text/css">
+        body {
+            padding: 0 10%;
+        }
+
+        .table1,
+        .table2 {
+            border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .table1 td {
+            height: 30px;
+            vertical-align: top;
+            padding: 3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Invoice Receipt</h1>
+
+    <table class="table1">
+        <tr>
+            <td colspan="2" style="width: 66.66%">Name</td>
+            <td style="width:33.33%">Invoice Number</td>
+        </tr>
+        <tr>
+            <td colspan="3">Address,City,State,Zip</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>Email</td>
+            <td>Invoice Date</td>
+        </tr>
+        <tr>
+            <td>
+                <div style="width:50%; float:left;">
+                    <input type="checkbox" />cash<br />
+                    <input type="checkbox" />check
+                </div>
+                <div style="width: 50%; float:right;">
+                    <input type="checkbox" />Credit Card<br />
+                    <input type="checkbox" />Others
+                </div>
+
+            </td>
+            <td>Sold by</td>
+            <td>Due Date</td>
+        </tr>
+
+    </table>
+    <table class="table2">
+        <tr>
+            <th style="width:7.5%"> </th>
+            <th style="width:40%">Description</th>
+            <th style="width:15%">Quntity</th>
+            <th style="width:15%">Price</th>
+            <th colspan="2">Amount</th>
+        </tr>
+        <tr class="tableTr">
+            <td style="text-align: center;">[Number]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="width:15%"></td>
+            <td style="width:7.5%"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
