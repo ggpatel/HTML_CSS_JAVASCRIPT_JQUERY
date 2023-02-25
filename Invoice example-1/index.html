@@ -18,16 +18,17 @@
 
     <table class="table1">
         <tr>
-            <td colspan="2" style="width: 66.66%">Name</td>
-            <td style="width:33.33%">Invoice Number</td>
+            <td colspan="2" style="width: 66.66%">Name <input type="text" id="Name" placeholder="Name"
+                    style="width:98%" /><span class="name"></span></td>
+            <td style="width:33.33%">Invoice Number <input type="text" id="Invoice" placeHolder="Invoice number"
+                    style="width:98%" /><span class="Invoice"></span></td>
         </tr>
         <tr>
-            <td colspan="3">Address,City,State,Zip</td>
-        </tr>
-        <tr>
-            <td>Phone</td>
-            <td>Email</td>
-            <td>Invoice Date</td>
+            <td>Phone<input type="text" id="Phone" placeholder="Phone" style="width:98%" /><span class="Phone"></span>
+            </td>
+            <td>Email<input type="text" id="Email" placeholder="Email" style="width:98%" /><span class="Email"></span>
+            </td>
+            <td>Invoice Date<input type="text" id="Date" placeholder="Date" style="width:98%" /></td>
         </tr>
         <tr>
             <td>
@@ -41,8 +42,10 @@
                 </div>
 
             </td>
-            <td>Sold by</td>
-            <td>Due Date</td>
+            <td>Sold by<input type="text" id="Sold by" placeholder="Sold by" style="width:98%" /><Span
+                    class="Sold By"></span></td>
+            <td>Due Date<input type="text" id="Due Date" placeholder="Due Date" style="width:98%" /><span
+                    class="Due Date"></span></td>
         </tr>
 
     </table>
@@ -63,6 +66,8 @@
             <td style="width:7.5%"></td>
         </tr>
     </table>
+    <br /><br />
+    <input type="button" value="submit" onclick="onClick()" />
 </body>
 
 </html>
